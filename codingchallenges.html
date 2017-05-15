@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<script>
+			var myObject = {name: "Jack", age:23, occupation: "Consultant"};
+			
+			console.log(myObject.name + " " + myObject.age + " " + myObject.occupation);
+
+			function addAge()	{
+				myObject.age++;
+				console.log(myObject.name + " " + myObject.age + " " + myObject.occupation);
+			}
+			function squareNum(sq)	{
+				var square = sq * sq;
+				console.log(sq + " squared = " + square);
+			}
+			function sumNumbers(num1, num2, num3)	{
+				outputSum = num1 + num2 + num3;
+				console.log("Sum = " + outputSum);
+			}
+			function sayHello()	{
+				console.log("Hiya");
+			}
+			function changeJob()	{
+				myObject.occupation = "DevOps";
+				console.log(myObject.name + " " + myObject.age + " " + myObject.occupation);
+			}
+			function clickSumNumbers()	{
+				var inputSumNum = sumNumbers(2,3,4);
+			}
+			function clickSquareNum()	{
+				var outputSquare = squareNum(5);
+			}
+		</script>
+	<input type="button" onclick = "addAge()" value = "increment age by 1"/>
+	<input type ="button" onclick= "sayHello()" value = "Hello"/>
+	<input type ="button" onclick= "changeJob()" value = "Change Job Title"/>
+	<input type ="button" onclick= "clickSquareNum()" value = "Squared Number"/>
+	<input type ="button" onclick= "clickSumNumbers()" value = "Sum Numbers"/>
+
+	
+	<p>Coding Challenge 3</p>
+	<script>
+	function funnyString()	{
+		var funnyString = "He said \"My name is Jack\"";
+		console.log(funnyString);
+	}
+	function lowerCase()	{
+		var funnyString = "He said \"My name is Jack\"";
+		console.log(funnyString.toLowerCase());
+	}
+	function upperCase()	{
+		var funnyString = "He said \"My name is Jack\"";
+		console.log(funnyString.toUpperCase());
+	}
+	function stringAddition()	{
+		var num1 = "5";
+		var num2 = "5";
+
+		var output = +num1 + +num2;
+		console.log(output);
+	}
+	var myArray = ["bread", "milk", "paper"];
+	function outputArray()	{
+		
+		console.log(myArray);
+	}
+	function addArrayElement()	{
+		myArray[myArray.length] = "bog roll";
+		console.log(myArray);
+	}
+
+	</script>
+	<input type ="button" onclick= "funnyString()" value = "Funny String"/>
+	<input type ="button" onclick= "lowerCase()" value = "Lower Case"/>
+	<input type ="button" onclick= "upperCase()" value = "Upper Case"/>
+	<input type="button" onclick="stringAddition()" value = "Add Strings"/>
+	<input type="button" onclick="outputArray()" value = "Print Array"/>
+	<input type="button" onclick="addArrayElement()" value = "Get Bog Roll"/>
+
+	<p>Coding Challenge 4</p>
+	<script> 
+	function checkAge()	{
+		var age = 23;
+		if (age > 19 && age < 41)	{
+			console.log("Within age range!");
+		} else {
+			console.log("Out of age range");
+		}
+	}
+	</script>
+	<input type ="button" onclick= "checkAge()" value = "Check Age Range"/>
+	<p>Coding Challenge 5</p>
+	<script>
+		
+	function fizzBuzz()	{
+		
+		for (var x=1; x <= 100; x++)	{
+    		if  ((x % 3 == 0) && (x % 5 ==0)) {
+        		console.log(x + ": FizzBuzz");
+   			} else if(x % 3 == 0) {
+            		console.log(x+ ": Fizz");
+       		} else if(x % 5 == 0 ) {
+          		console.log(x + ": Buzz");
+    		}
+    		console.log(x);	
+    	}
+	}
+	</script>
+	<input type = "button" onclick="fizzBuzz()" value="FizzBuzz"/>
+	<p>Coding challenge 6</p>
+	<script>
+	
+		var input = 4247;
+		if (input % 3 == 0)	{
+			input = input /3;
+		} else	{
+			input++;
+		}
+
+	</script>
+	<input type="button" onclick="divideByThree" value="Divide By Three"/>
+	</body>
+</html>
